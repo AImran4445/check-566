@@ -1,0 +1,671 @@
+img:not([src]) {
+  visibility: hidden;
+}
+/* Fixes Firefox anomaly during image load */
+@-moz-document url-prefix() {
+  img:-moz-loading {
+    visibility: hidden;
+  }
+}
+/***********************
+  BUTTONS
+************************/
+.btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn.outline {
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+}
+.btn.rounded {
+  -webkit-border-radius: 500px;
+  border-radius: 500px;
+}
+.btn-white {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.outline.btn-white {
+  border-color: #ffffff;
+}
+.outline.btn-pink {
+  color: #ffffff;
+  border-color: #ed1c4b;
+}
+.outline.btn-blue {
+  color: #ffffff;
+  border-color: #2575fc;
+}
+.btn-blue-gradient {
+  color: #ffffff;
+  background-color: #2575fc;
+  border: 0 none;
+  margin: 16px 0;
+}
+.btn-blue-gradient:hover,
+.btn-blue-gradient:focus {
+  color: #ffffff;
+  background: #2575fc;
+}
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.game-col.col-xs-5 {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .game-col.col-sm-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .game-col.col-md-5 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .game-col.col-lg-5 {
+    width: 20%;
+    float: left;
+  }
+}
+/***********************
+  STYLES
+************************/
+body {
+  background: #0f1629;
+}
+.body-wrapper {
+  background: #192442;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.header {
+  padding: 25px 0;
+}
+.header .navbar {
+  font-family: "museo_sans700";
+  text-transform: capitalize;
+  margin: 0;
+  min-height: 0;
+}
+.header .nav > li > a.menu-link-item:focus,
+.header .nav > li > a.menu-link-item:hover {
+  background: #0f1629;
+}
+.header .navbar .navbar-nav {
+  margin: 7.5px 0;
+}
+.header .navbar .navbar-nav > li > a {
+  padding: 8px 15px;
+}
+.header .navbar .main-menu a {
+  /*color: #5d647a;*/
+  color: #ffffff;
+  font-size: 0.8571428571428571em;
+  text-transform: capitalize;
+}
+.menu-link-item {
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+.header .navbar .user-menu {
+  font-size: 0.8571428571428571em;
+}
+.header .navbar .user-menu a.menu-link-item {
+  color: #ffffff;
+}
+.header .navbar .btn {
+  font-size: inherit;
+  padding: 8px 22px;
+}
+.header .navbar-toggle .icon-bar {
+  background: #ffffff;
+}
+/** Slider **/
+.custom-navigation-arrows {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+/*.main-slider{
+}*/
+.main-slider .slick-slide {
+  -moz-transform: scale(0.92);
+  -ms-transform: scale(0.92);
+  -o-transform: scale(0.92);
+  -webkit-transform: scale(0.92);
+  transform: scale(0.92);
+}
+.main-slider .slick-slide.slick-center {
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  transition: all 300ms ease;
+  z-index: 1;
+  position: relative;
+}
+.main-slider .slick-slide img {
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.main-slider .slick-slide:before {
+  content: "";
+  background: rgba(19, 27, 51, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.main-slider .slick-slide.slick-center:before {
+  opacity: 0;
+}
+/** Games Section **/
+.games-section h2 {
+  margin-top: 0;
+}
+.games-section h2,
+.games-section h2 span {
+  font-size: 1.2857142857142858em;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.games-section h2 span {
+  padding: 0 10px 0 0;
+}
+.game-item {
+  position: relative;
+  margin: 15px 0;
+}
+.game-item .game-thumbnail {
+  position: relative;
+}
+.game-item .game-thumbnail:after {
+  /*content: ''; Sergey: this makes images darker then they are */
+  background: rgba(19, 27, 51, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.game-item .game-thumbnail img {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.game-item h3 {
+  font-family: "museo_sans700";
+  font-size: 1.1428571428571428em;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.game-item h3 a {
+  color: #364e8f;
+}
+.game-item p {
+  font-family: "museo_sans300";
+  font-size: 0.8571428571428571em;
+}
+.game-item p a {
+  color: #b2b2b2;
+}
+.game-item .item-caption {
+  background: rgba(19, 27, 51, 0.7);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.game-item .item-caption-wrapper {
+  width: 100%;
+}
+.game-item .item-caption-wrapper .btn {
+  padding: 10px 28px;
+  font-family: "museo_sans500";
+  text-transform: uppercase;
+}
+/** Promotion Section **/
+.section-wrapper {
+  background: url("live-dealer-promotion-background.jpg") no-repeat bottom
+    center;
+}
+.promotion-section {
+  padding: 40px 0;
+}
+.promotion-section .promotion-image {
+  text-align: center;
+  margin: 0 auto;
+}
+.promotion-section .promotion-image img {
+  max-width: 100%;
+}
+.promotion-hero {
+  padding: 120px 150px 0 0;
+}
+.promotion-hero h6 {
+  font-family: "museo_sans700";
+  color: #364e8f;
+  text-transform: uppercase;
+  font-size: 0.7857142857142857em;
+}
+.promotion-hero h2 {
+  font-family: "museo_sans900";
+  color: #ffffff;
+  font-size: 2.142857142857143em;
+}
+.promotion-hero p {
+  font-family: "museo_sans100";
+  color: #b3b3b3;
+  font-size: 1.2857142857142858em;
+  margin-bottom: 50px;
+}
+.promotion-hero .btn {
+  font-family: "museo_sans500";
+  color: #ffffff;
+  font-size: 0.8571428571428571em;
+  text-transform: uppercase;
+}
+/** Promotion Section **/
+.promotions-section .section-wrapper {
+  padding: 30px 0;
+  background: #0f1629;
+}
+.promotions-section .promotion-item {
+  padding: 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-position: top right;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.promotions-section .promotion-hero {
+  padding: 30px;
+  position: relative;
+}
+.promotions-section .promotion-hero .game-logo {
+  margin-bottom: 130px;
+}
+.promotions-section .promotion-hero h2 {
+  text-transform: uppercase;
+  font-size: 2.857142857142857em;
+  width: 55%;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+.promotions-section .promotion-hero h6 {
+  color: #565d74;
+  font-size: 0.7857142857142857em;
+}
+.promotions-section a {
+  text-decoration: none;
+}
+.promotions-section .promotion-hero .hero-image {
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding-bottom: 415px;
+  padding-right: 355px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.footer {
+  padding: 20px 0;
+}
+/*.footer .list-inline{
+}*/
+.footer .list-inline li {
+  font-family: "museo_sans700";
+  font-size: 0.8571428571428571em;
+  text-transform: capitalize;
+}
+.footer .list-inline li a {
+  color: #5d647a;
+}
+.footer .copyright {
+  font-family: "museo_sans300";
+  color: #5d647a;
+  font-size: 0.7142857142857143em;
+}
+.footer .copyright p {
+  margin: 0;
+}
+.footer .footer-icons img {
+  margin: 0 0 0 10px;
+}
+/** Inner Pages **/
+.page .promotion-section .game-image {
+  padding: 60px;
+}
+.page .promotion-section .game-image img {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.page .promotion-section .promotion-hero {
+  padding: 60px 150px 0 0;
+}
+.page .content-area {
+  margin-bottom: 50px;
+}
+.page .content-area h2.centered {
+  font-size: 3.4285714285714284em;
+  color: #ffffff;
+  text-align: center;
+  font-family: "museo_sans100";
+  margin-bottom: 50px;
+}
+.page .game-content {
+  color: #96989c;
+  font-family: "museo_sans300";
+  font-size: 1.1428571428571428em;
+  line-height: 1.7142857142857142em;
+}
+.page .game-content h4 {
+  color: #ffffff;
+  font-family: "museo_sans300";
+  font-size: 1.1428571428571428em;
+  line-height: 1.7142857142857142em;
+}
+.page .game-content table {
+  color: #96989c;
+  background: #151f38;
+  font-family: "museo_sans300";
+  font-size: 1.1428571428571428em;
+  line-height: 1.7142857142857142em;
+  margin: 20px 0;
+}
+.page .game-content .table,
+.page .game-content .table-bordered > tbody > tr > td,
+.page .game-content .table-bordered > tbody > tr > th,
+.page .game-content .table-bordered > tfoot > tr > td,
+.page .game-content .table-bordered > tfoot > tr > th,
+.page .game-content .table-bordered > thead > tr > td,
+.page .game-content .table-bordered > thead > tr > th {
+  border-color: #0f1629;
+}
+.page .game-content thead tr {
+  color: #ffffff;
+  background: #0f1629;
+}
+.page .game-content thead tr th {
+  width: 110px;
+  text-transform: uppercase;
+  font-size: 0.8571428571428571em;
+}
+.page .game-content .table > tbody > tr > td,
+.page .game-content .table > tbody > tr > th,
+.page .game-content .table > tfoot > tr > td,
+.page .game-content .table > tfoot > tr > th,
+.page .game-content .table > thead > tr > td,
+.page .game-content .table > thead > tr > th {
+  padding: 18px;
+}
+.page .steps .step {
+  margin-top: 0;
+}
+.page .steps .step .media-body {
+  vertical-align: middle;
+}
+.page .steps .step .step-icon {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.page .steps .step .step-icon svg:not(:root) {
+  vertical-align: middle;
+}
+.page .steps .step .step-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 50px;
+}
+.page .steps .step .step-content h2 {
+  font-family: "museo_sans300";
+  font-size: 1.7142857142857142em;
+  color: #ffffff;
+}
+.page .steps .step .step-content p {
+  font-family: "museo_sans100";
+  font-size: 1.2857142857142858em;
+  color: #b3b3b3;
+}
+.page .steps .step:after {
+  content: "";
+  border: 1px dashed #2575fc;
+  height: 100px;
+  display: block;
+  width: 1px;
+  margin-left: 73px;
+}
+.page .steps .step.step-three:after {
+  display: none;
+}
+.page .related-offers {
+  padding: 50px 0;
+  background: #0f1629;
+}
+.page .related-offers h3 {
+  text-align: center;
+  font-family: "museo_sans100";
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.page .related-offers h3:after {
+  content: "";
+  border-top: 1px solid #2e77f7;
+  width: 15%;
+  display: block;
+  margin: 30px auto 0 auto;
+}
+.page .related-offers .related-offers-table ul {
+  list-style: none;
+  padding: 0;
+}
+.page .related-offers .related-offers-table ul li {
+  vertical-align: middle;
+}
+.page .related-offers .related-offers-table .brand-logo img {
+  -webkit-border-radius: 500px;
+  border-radius: 500px;
+}
+.page .related-offers .related-offers-table .brand-name h4 {
+  margin: 0;
+  font-size: 1.1428571428571428em;
+  font-family: "museo_sans500";
+}
+.page .related-offers .related-offers-table .brand-name h4 a {
+  color: #ffffff;
+}
+.page .related-offers .related-offers-table .brand-name h5 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 1em;
+  font-family: "museo_sans300";
+}
+.page .related-offers .related-offers-table .brand-name h5 a {
+  color: #96989c;
+}
+.page .related-offers .related-offers-table .brand-offer p {
+  font-family: "museo_sans300";
+  margin: 0;
+}
+.page .related-offers .related-offers-table .brand-offer p a {
+  color: #96989c;
+}
+.page .related-offers .related-offers-table .button a {
+  font-family: "museo_sans300";
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.page .related-offers .related-offers-table hr {
+  border-color: #192442;
+}
+
+.modal-content {
+  background: #0f1629;
+}
+.modal-body {
+  padding: 10px;
+}
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+/*
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+*/
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  top: 1px;
+}
+.modal .btn {
+  font-size: 20px !important;
+}
+.md-form .error {
+  display: none;
+}
+.md-form .form-group .form-control {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  font-size: 1.2857142857142858em;
+  color: #ffffff;
+  background: none;
+}
+.md-form .control-label {
+  font-family: "museo_sans500";
+  text-transform: uppercase;
+  position: relative;
+  margin: 0;
+  font-size: 0.8571428571428571em;
+  font-weight: 400;
+  pointer-events: none;
+  transform: translate3d(0, 22px, 0) scale(1);
+  transform-origin: left top;
+  transition: 240ms;
+  color: #ffffff;
+}
+.md-form .form-group.focused .control-label {
+  opacity: 1;
+  transform: scale(0.75);
+  color: #ffffff;
+}
+.md-form .form-control {
+  align-self: flex-end;
+}
+.md-form .form-control::-webkit-input-placeholder {
+  color: transparent;
+  transition: 240ms;
+  opacity: 0.4;
+}
+.md-form .form-control:focus::-webkit-input-placeholder {
+  transition: none;
+}
+.md-form .form-group.focused .form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.md-form .btn {
+  padding: 10px 30px;
+  float: right;
+}
+.close {
+  font-size: 0.8571428571428571em;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  text-shadow: none;
+  text-transform: uppercase;
+  color: #808080;
+  margin: 10px 0 0 0;
+}
+.close:hover {
+  color: #808080;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.modal-body h3 {
+  font-family: "museo_sans100";
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 2.142857142857143em;
+  color: #ffffff;
+}
+.modal-body h4 {
+  font-family: "museo_sans500";
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.2857142857142858em;
+  color: #ffffff;
+}
+
+.loading-layer {
+  /*background: rgba(0,0,0,.5) url('/images/loading.gif') no-repeat;*/
+  background: url("loading.gif") 50% 50% no-repeat rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+h1 {
+  color: #ffffff;
+}

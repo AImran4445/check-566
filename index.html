@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script async="" src="js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="csrf-token" content="">
+     <link href="./favicon.png" rel="shortcut icon" type="image/x-icon">
+    <title>Get your Welcome Bonus</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
+    <link href="animate.min.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+    <link href="001.css" rel="stylesheet">
+    <script>
+        function getURLParameter(name) {
+            return decodeURIComponent(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        }
+    </script>
+
+</head>
+<style>
+    
+     .button,
+        .btn-flat {
+            text-transform: uppercase;
+            -webkit-appearance: initial;
+            padding: 14px 22px;
+            display: block;
+            margin: 10px auto 4px auto;
+            text-align: center;
+            font-family: 'PT Sans Narrow', Arial, sans-serif;
+            font-weight: normal;
+            color: #fff;
+            max-width: 380px;
+            position: relative;
+            height: 65px;
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 700;
+            border-radius: 6px;
+            background-color: #449d44;
+            border-color: #398439;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .big-form .btn-flat{
+            margin: 35px auto 10px;
+            width: 250px;
+            display: block;
+            height: 62px;
+            padding: 14px;
+            font-size: 22px !important;
+        }
+
+        .button:hover,
+        .btn-flat:hover {
+            background-color: #306e30;
+            text-decoration: none;
+            color: #fff;
+        }
+        h1
+        {
+            text-shadow: 0px 0px 20px black;
+        }
+       
+h4.modal-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bold;
+  color: #449d44;
+  text-align: center;
+  margin-left: 50px;
+ 
+}
+@media (max-width:720px) {
+    h4.modal-title {
+ 
+  margin-left: 0px;
+ 
+}
+    
+}
+
+.close-modal-img {
+  
+  width: 30px;
+  height: 30px;
+  
+}
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    background-color: #000;
+    margin-top: 170px;
+    padding: 10px 20px;
+}
+.form-control {
+    border-radius: 500px;
+    height: auto;
+    padding: 0px 18px;
+    font-size: 1.2857142857142858em;
+    font-family: "museo_sans300";
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+.btn-flat {
+    text-transform: uppercase;
+    -webkit-appearance: initial;
+    padding: 12px 22px;
+    display: block;
+    margin: 40px auto 4px auto;
+    text-align: center;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    max-width: 380px;
+    position: relative;
+    height: 65px;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: #449d44;
+    border-color: #398439;
+    text-decoration: none;
+    padding: 21px 78px;
+    margin-top: 20px;
+}
+.form-control {
+    border-radius: 500px;
+    height: auto;
+    font-size: 1.2857142857142858em;
+    font-family: "museo_sans300";
+    padding: 8px 18px;
+    border-radius: 5px;
+    margin: 12px 0px;
+}
+.text-beneath
+
+{   font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+}
+.text-beneath a
+{   
+    margin-left: 5px;
+}
+@media (max-width: 720px) {
+    .modal-header{
+        justify-content: center !important;
+    }
+    h4.modal-title {
+    font-size: 5.5vw;
+}
+.text-beneath {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.text-beneath a{
+    margin-left: 0px;
+}
+.form-control {
+    padding: 12px 18px;
+}
+.big-form .btn-flat {
+    margin: 24px auto 10px;
+}
+#mainContainer .main-container-wrapper{
+    padding-top: 14rem;
+}
+.main-container-wrapper .text-center{
+    margin: 0;
+}
+}
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: none;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+.text-center{
+    margin-top: 3rem;
+}
+
+.text-center .b1{
+    font-size: 50px;
+}
+.text-center .b2{
+    font-size: 30px;
+}
+@media (max-width: 440px) {
+    #mainContainer .main-container-wrapper {
+    padding-top: 12rem;
+}
+#mainContainer .text-center .b1{
+    font-size: 35px;
+}
+#mainContainer .text-center .b2{
+    font-size: 20px;
+}
+}
+@media (max-width: 390px) {
+    #mainContainer .main-container-wrapper {
+    padding-top: 10rem;
+}
+#mainContainer .text-center .b1{
+    font-size: 31px;
+}
+#mainContainer .text-center .b2{
+    font-size: 19px;
+}
+}
+@media (max-width: 360px) {
+    #mainContainer .main-container-wrapper {
+    padding-top: 9rem;
+}
+#mainContainer .text-center .b1{
+    font-size: 31px;
+}
+#mainContainer .text-center .b2{
+    font-size: 24px;
+}
+}
+@media (max-width: 330px) {
+    #mainContainer .main-container-wrapper {
+    padding-top: 7rem;
+}
+}
+</style>
+
+<body>
+    <div class="page-wrapper">
+        <div class="content-area">
+
+            <div class="container " id="mainContainer">
+                <div class="logo-site">
+                    <img style="width: auto; height: auto; margin: 0 auto; padding: 35px 15px 25px; display: block;"
+                        src="./Vyhraj-logo-border.png" alt="">
+                </div>
+                <div class="row main justify-content-center d-flex align-content-center flex-wrap main-container-wrapper">
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                        <h1 class="text-center"><span class="b1"><script>document.write(getURLParameter('b1'))</script></span><br><span class="b2"><script>document.write(getURLParameter('b2'))</script></span></h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-8">
+                       
+					    <div class="texts">
+                            <a class="button start-btn" id="modal" href="#" data-toggle="modal" data-target="#get-bonus">
+                              <span class="btn-text" id="btn-text">PLAY NOW</span>
+                            </a>
+                        </div>
+    
+                        <div class="modal" id="get-bonus">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content" style="border: 1px solid #fff;">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Please enter your email!</h4>
+                                
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  <div class="insert-form">
+                                    <div id="mauticform_wrapper_bonusen" class="mauticform_wrapper">
+                                        <form class="big-form" action="https://app.confirmedsender.com/lists/sf020b8d0tf76/subscribe"
+                                        method="post">
+                                        <input class="form-control field-email field-type-text " placeholder="Zde zadej svůj email"
+                                            type="email" required value="" name="EMAIL" id="EMAIL"
+                                            />
+                                        <input class="form-control field-cid field-type-text" placeholder="Cid" type="hidden" value=""
+                                            name="CID" id="CID" />
+                                        <input class="form-control field-camp field-type-text" placeholder="CAMP" type="hidden" value="bonus-ppc"
+                                            name="CAMP" id="CAMP" />
+                                        <input class="form-control field-camp2 field-type-text" placeholder="CAMP2" type="hidden" value=""
+                                            name="CAMP2" id="CAMP2" />
+                                        <input type="hidden" name="83771a48627e161acc0946449539ccfd290f4d51" tabindex="-1"
+                                            autocomplete="83771a48627e161acc0946449539ccfd290f4d51" value="" />
+                                        <input type="submit" class="btn btn-primary btn-flat" name="yt0"
+                                            value=" ZÍSKAT IHNED " />
+                                    </form>
+                                    <span class="text-beneath">
+                                        Odesláním emailu souhlasíte se zásadami <a href="#">ochrany osobních údajů</a>
+                                       </span>
+                
+                                    </div>
+                                  </div>
+                                </div>
+                        
+                        
+                        
+                              </div>
+                            </div>
+                          </div>
+                <!-- footer  -->
+                <div class="row">
+                    <div class="col">
+                        <div class="footer-div">
+                            <a class="terms-link">
+                                <img src="only-18.png" alt="18+"
+                                    style="padding:5px 0 10px 10px;width:40px;height:auto;">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="begamble.png" alt="BeGambleAware"
+                                    style="vertical-align:middle;height:40px;width:auto;padding:0 10px 10px;">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="gambling-therapy.png" alt="GamblingTherapy"
+                                    style="padding: 5px 10px 10px 0;width:110px;height:auto;">
+                            </a>
+                            <br>
+                            <div id="copyright">Copyright © 2021 - All rights reserved</div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end of "container" -->
+        </div> <!-- end of "content-area" -->
+    </div> <!-- page warrper -->
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+
+
+    <script>
+
+    </script>
+
+
+<script>
+    function loading_start() {
+        console.log("loading_start");
+        $("#submit_btn").css('opacity', '0.7');
+        $("#submit_btn").html("<i class='fa fa-spinner fa-spin' style='font-size:24px;margin-right:8px;'></i>Processing...");
+        window.loading_started = true;
+    }
+</script>
+<script>
+    function loading_end() {
+        console.log("loading_end");
+        $("#submit_btn").html("Claim it!");
+        window.loading_started = false;
+    }
+</script>
+<SCRIPT type="text/javascript">
+    // Forms
+    function resizeFunction() {
+        // Feedback Icon position
+        jQuery('#newsletter-form .form-control-feedback').css({ 'left': jQuery('.input-group-btn').outerWidth() + 2 });
+    }
+    jQuery(window).load(function () {
+        resizeFunction();
+    });
+
+    jQuery(window).ready(function () {
+        resizeFunction();
+    });
+
+    jQuery(window).resize(function () {
+        resizeFunction();
+    });
+
+    jQuery('.form-control').on('focus blur', function (e) {
+        jQuery(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+</SCRIPT>
+
+
+<script type="text/javascript">
+    // Forms
+    function resizeFunction() {
+        // Feedback Icon position
+        jQuery('#newsletter-form .form-control-feedback').css({ 'left': jQuery('.input-group-btn').outerWidth() + 2 });
+    }
+    jQuery(window).on('load', function () {
+        resizeFunction();
+    });
+
+    jQuery(window).ready(function () {
+        resizeFunction();
+    });
+
+    jQuery(window).resize(function () {
+        resizeFunction();
+    });
+
+    jQuery('.form-control').on('focus blur', function (e) {
+        jQuery(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+</script>
+    <script>
+        function loading_start() {
+            console.log("loading_start");
+            $("#submit_btn").css('opacity', '0.7');
+            $("#submit_btn").html("<i class='fa fa-spinner fa-spin' style='font-size:24px;margin-right:8px;'></i>Processing...");
+            window.loading_started = true;
+        }
+    </script>
+    <script>
+        function loading_end() {
+            console.log("loading_end");
+            $("#submit_btn").html("Claim it!");
+            window.loading_started = false;
+        }
+    </script>
+
+
+
+
+    <script src="ie-emulation-modes-warning.js"></script>
+    <script src="icon.js"></script>
+    
+
+
+
+    <script type="text/javascript">
+        // Forms
+        function resizeFunction() {
+
+            jQuery('#newsletter-form .form-control-feedback').css({ 'left': jQuery('.input-group-btn').outerWidth() + 2 });
+        }
+
+        jQuery(window).on('load', function () {
+            resizeFunction();
+        });
+
+        jQuery(window).ready(function () {
+            resizeFunction();
+        });
+
+        jQuery(window).resize(function () {
+            resizeFunction();
+        });
+
+        jQuery('.form-control').on('focus blur', function (e) {
+            jQuery(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+        }).trigger('blur');
+    </script>
+	
+		<script defer>
+		if (typeof MauticSDKLoaded == 'undefined') {
+			var MauticSDKLoaded = true;
+			var head = document.getElementsByTagName('head')[0];
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://mail.bonusguard.com/media/js/mautic-form.js';
+			script.onload = function () {
+				MauticSDK.onLoad();
+			};
+			head.appendChild(script);
+			var MauticDomain = 'https://mail.bonusguard.com';
+			var MauticLang = {
+				'submittingMessage': "Please wait..."
+			}
+		} else if (typeof MauticSDK != 'undefined') {
+			MauticSDK.onLoad();
+		}
+	</script>
+	<script>
+		document.getElementById("mauticform_input_bonusen5_cid").value = getURLParameter("clickid");
+		document.getElementById("mauticform_input_bonusen5_lander").value = getURLParameter("lander");
+		document.getElementById("mauticform_input_bonusen5_campaign").value = getURLParameter("campaign");
+	</script>
+    <script>
+        $('.start-btn').on('click', function () {
+            var o = document.createElement("img");
+            o.src = 'https://finmag.com/click.php?event1=1';
+            o.referrerPolicy = 'no-referrer-when-downgrade';
+        })
+    </script>
+
+	
+</body>
+
+</html>
